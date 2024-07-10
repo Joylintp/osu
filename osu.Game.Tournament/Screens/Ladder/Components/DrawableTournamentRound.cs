@@ -38,8 +38,8 @@ namespace osu.Game.Tournament.Screens.Ladder.Components
                     },
                     textName = new TournamentSpriteText
                     {
-                        Font = OsuFont.Torus.With(weight: FontWeight.Bold),
-                        Colour = TournamentGame.TEXT_COLOUR,
+                        Font = OsuFont.Torus.With(size: 24, weight: FontWeight.Bold),
+                        Colour = TournamentGame.TEXT_COLOUR_BLACK,
                         Origin = Anchor.TopCentre,
                         Anchor = Anchor.TopCentre
                     },
@@ -47,7 +47,7 @@ namespace osu.Game.Tournament.Screens.Ladder.Components
             };
 
             name = round.Name.GetBoundCopy();
-            name.BindValueChanged(_ => textName.Text = ((losers ? "Losers " : "") + round.Name).ToUpperInvariant(), true);
+            name.BindValueChanged(_ => textName.Text = ((losers ? "敗部" : "") + round.Name).ToUpperInvariant(), true);
 
             description = round.Description.GetBoundCopy();
             description.BindValueChanged(_ => textDescription.Text = round.Description.Value?.ToUpperInvariant() ?? string.Empty, true);

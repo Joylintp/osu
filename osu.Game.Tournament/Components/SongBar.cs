@@ -85,7 +85,7 @@ namespace osu.Game.Tournament.Components
                 {
                     Colour = colours.Gray3,
                     RelativeSizeAxes = Axes.Both,
-                    Alpha = 0.4f,
+                    Alpha = 0.75f,
                 },
                 flow = new FillFlowContainer
                 {
@@ -232,7 +232,7 @@ namespace osu.Game.Tournament.Components
                                             {
                                                 Colour = Color4.Black,
                                                 RelativeSizeAxes = Axes.Both,
-                                                Alpha = 0.1f,
+                                                Alpha = 0f,
                                             },
                                             new OsuLogo
                                             {

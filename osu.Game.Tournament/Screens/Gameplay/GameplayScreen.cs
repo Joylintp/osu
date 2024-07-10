@@ -89,7 +89,7 @@ namespace osu.Game.Tournament.Screens.Gameplay
                 {
                     Y = -147,
                     Anchor = Anchor.BottomCentre,
-                    Origin = Anchor.TopCentre,
+                    Origin = Anchor.TopCentre
                 },
                 new ControlPanel
                 {
