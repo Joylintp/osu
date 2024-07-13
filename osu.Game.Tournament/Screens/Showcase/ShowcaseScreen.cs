@@ -24,20 +24,6 @@ namespace osu.Game.Tournament.Screens.Showcase
                 {
                     Loop = true,
                     RelativeSizeAxes = Axes.Both,
-                },
-                new Container
-                {
-                    Padding = new MarginPadding { Bottom = SongBar.HEIGHT },
-                    RelativeSizeAxes = Axes.Both,
-                    Child = new Box
-                    {
-                        // chroma key area for stable gameplay
-                        Name = "chroma",
-                        Anchor = Anchor.TopCentre,
-                        Origin = Anchor.TopCentre,
-                        RelativeSizeAxes = Axes.Both,
-                        Colour = new Color4(0, 255, 0, 255),
-                    }
                 }
             });
         }
