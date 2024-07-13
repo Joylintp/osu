@@ -27,6 +27,7 @@ namespace osu.Game.Tournament.Screens.Showcase
                 },
                 new Container
                 {
+                    Y = 110,
                     Padding = new MarginPadding { Bottom = SongBar.HEIGHT },
                     RelativeSizeAxes = Axes.Both,
                     Child = new Box
@@ -35,6 +36,7 @@ namespace osu.Game.Tournament.Screens.Showcase
                         Name = "chroma",
                         Anchor = Anchor.TopCentre,
                         Origin = Anchor.TopCentre,
+                        Height = 512,
                         RelativeSizeAxes = Axes.Both,
                         Colour = new Color4(0, 255, 0, 255),
                     }
